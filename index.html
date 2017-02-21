@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Datos Personales</title>
+</head>
+<body>
+  <center><h1>Ingreso de datos del Usuario</h1></center>
+  <form action=" ">
+    <p>
+      <strong><center><label for="nombre">Nombre</label></center></strong>
+      <center><input name="nombre" type="text" required></center>
+    </p>
+    <p>
+      <strong><center><label for="apellido">Apellido</label></center></strong>
+      <center><input name="apellido" type="text" required></center>
+    </p>
+    <p>
+      <strong><center><label for="telefono">Telefono</label></center></strong>
+      <center><input type="text" name="telefono" pattern="^[9|8|7|6]\d{8}$" required></center>
+    </p>
+    <strong><center><label for="opcion">Escoge tu carro para continuar</label></center></strong><br>
+    <center><select name="opcion" required>
+      <option value="">Escoge tu carro</option>
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+    </select></center>
+    <p><br>
+      <strong><center><label for="email">Email</label></center></strong>
+      <center><input name="email" type="text" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required></center>
+    </p>
+    <p>
+      <strong><center><label for="passw">Crea tu contraseña</label></center></strong>
+      <center><input type="password" name="passw" pattern=".{6,}" title="6 o más caracteres" required></center>
+    </p>
+    <p>
+      <strong><center><input type="submit" name="" value="send"></center></strong>
+    </p>
+  </form>
+</body>
+</html>
